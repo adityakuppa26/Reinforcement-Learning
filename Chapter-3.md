@@ -1,4 +1,4 @@
-<b>Exercise 3.1: </b> Devise three example tasks of your own that fit into the reinforcement learning framework, identifying for each its states, actions, and rewards. Make the three examples as different from each other as possible. The framework is abstract and  flexible and can be applied in many different ways. Stretch its limits in some way in at least one of your examples.
+<b>Exercise 3.1: </b> Devise three example tasks of your own that fit into the reinforcement learning framework, identifying for each its states, actions, and rewards. Make the three examples as different from each other as possible. The framework is abstract and  flexible and can be applied in many different ways. Stretch its limits in some way in at least one of your examples.
 
 <b>Solution:</b> The first example would be of a robot trying to walk from one end to the other end of a room without falling. A state here would be the position of the robot and the view of the room the robot sees then. Actions would include making steps in any direction the robot sees as useful to achieve the goal of reaching the other end. Rewards could be -1 for each step it takes and -10 or a large negative for its collapse. 
 
@@ -95,3 +95,4 @@ Assuming &gamma; = 0.9, the above sum would be equal to 24.419.
 <b>Exercise 3.18 - Exercise 3.21:</b>
 
 ![image-ex3_12](images/ex3_18.JPG)
+=======
