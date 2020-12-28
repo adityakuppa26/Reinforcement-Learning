@@ -10,7 +10,7 @@
 
 <b>Solution:</b> Reinforcement learning requires its rewards to be scalar values. When the rewards take form of a vector i.e. multiple rewards, the agent would find it difficult to maximize the rewards - not knowing which values to focus upon. However, if the vector values could be condensed into a single value, it would be possible to fit it into the framework.
 
-<b><i>Exercise 3.3</i></b> Consider the problem of driving. You could define the actions in terms of the accelerator, steering wheel, and brake, that is, where your body meets the machine. Or you could dene them farther out - say, where the rubber meets the road, considering your actions to be tire torques. Or you could define them farther in - say, where your brain meets your body, the actions being muscle twitches to control your limbs. Or you could go to a really high level and say that your actions are your choices of where to drive. What is the right level, the right place to draw the line between agent and environment? On what basis is one location of the line to be preferred over another? Is there any fundamental reason for preferring one location over another, or is it a free choice?
+<b><i>Exercise 3.3</i></b> Consider the problem of driving. You could define the actions in terms of the accelerator, steering wheel, and brake, that is, where your body meets the machine. Or you could define them farther out - say, where the rubber meets the road, considering your actions to be tire torques. Or you could define them farther in - say, where your brain meets your body, the actions being muscle twitches to control your limbs. Or you could go to a really high level and say that your actions are your choices of where to drive. What is the right level, the right place to draw the line between agent and environment? On what basis is one location of the line to be preferred over another? Is there any fundamental reason for preferring one location over another, or is it a free choice?
 
 <b>Solution:</b> There is no single right choice here. The right place to draw the line would certainly defend on the task at hand. If the task is about modelling the interaction between a car and the driving environment, it would be a good choice to define actions in terms of steering wheel, brakes, etc. However, if the task involves interaction between a driver and the driving environment, it would make more sense to draw the line at - say, higher levels involving actions like muscle twitches. 
 
@@ -22,7 +22,7 @@
 
 <b>Solution:</b> By "improvement" it is assumed that the robot is expected to solve the maze at a faster rate. The problem here is that we have not specified the time limit. Since there is no penalty for exploration, the robot could keep exploring all the time until it reaches the terminal state. However, if we assign a reward of -1 for each step taken by the robot, we could get it to escape the maze quickly because we are now penalizing the robot for the delays.
 
- <b>Exercise 3.6: Broken Vision System</b> Imagine that you are a vision system. When you are first turned on for the day, an image  floods into your camera. You can see lots of things, but not all things. You can't see objects that are occluded, and of course you can't see objects that are behind you. After seeing that first scene, do you have access to the Markov state of the environment? Suppose your camera was broken that day and you received no images at all, all day. Would you have access to the Markov state then?
+ <b>Exercise 3.6: Broken Vision System</b> Imagine that you are a vision system. When you are first turned on for the day, an image  floods into your camera. You can see lots of things, but not all things. You can't see objects that are occluded, and of course you can't see objects that are behind you. After seeing that first scene, do you have access to the Markov state of the environment? Suppose your camera was broken that day and you received no images at all, all day. Would you have access to the Markov state then?
 
 <b>Solution:</b> Markov state is an information state that captures the relevant information from the past which could be useful for predicting the future. Since we do not have an entire view of the things, we do not have all the information we might need to predict the future. Therefore, we do not have access to the environment's Markov state. Also, if the camera was broken, we would have no latest pictures (current environment state) of the environment and thus no access to the Markov state.
 
@@ -40,13 +40,13 @@
 
 Consider L, R, B, T to be left, right, bottom and top respectively.
 
-![image-ex3_9](images/ex3_9.JPG)
+![image-ex3_9](images/ex3_9.jpg)
 
 <b>Exercise 3.10</b> In the gridworld example, rewards are positive for goals, negative for running into the edge of the world, and zero the rest of the time. Are the signs of these rewards important, or only the intervals between them? Prove, using (3.2), that adding a constant c to all the rewards adds a constant, v<sub>c</sub>, to the values of all states, and thus does not affect the relative values of any states under any policies. What is v<sub>c</sub> in terms of c and &gamma;?
 
 <b>Solution:</b> The signs of the rewards are important as they convey which ones are positive and which are negative, letting agent learn to avoid negative awards to maximise the return. 
 
-![image-ex3_9](images/ex3_10.PNG)
+![image-ex3_10](images/ex3_10.PNG)
 
 <b>Exercise 3.11</b> Now consider adding a constant c to all the rewards in an episodic task, such as maze running. Would this have any effect, or would it leave the task unchanged as in the continuing task above? Why or why not? Give an example.
 
@@ -68,7 +68,7 @@ Give the equation corresponding to this intuition and diagram for the action val
 
 <b>Solution:</b>
 
-![image-ex3_12](images/ex3_13.PNG)
+![image-ex3_13](images/ex3_13.PNG)
 
 <b>Exercise 3.14</b> Draw or describe the optimal state-value function for the golf example. 
 
@@ -82,7 +82,7 @@ Give the equation corresponding to this intuition and diagram for the action val
 
 <b>Solution:</b> 
 
-![image-ex3_12](images/ex3_16.PNG)
+![image-ex3_16](images/ex3_16.PNG)
 
 <b>Exercise 3.17</b> Figure 3.8 gives the optimal value of the best state of the gridworld as 24.4, to one decimal place. Use your knowledge of the optimal policy and (3.2) to express this value symbolically, and then to compute it to three decimal places.
 
@@ -94,4 +94,4 @@ Assuming &gamma; = 0.9, the above sum would be equal to 24.419.
 
 <b>Exercise 3.18 - Exercise 3.21:</b>
 
-![image-ex3_12](images/ex3_18.JPG)
+![image-ex3_18](images/ex3_18.jpg)
