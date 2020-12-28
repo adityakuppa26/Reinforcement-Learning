@@ -2,9 +2,9 @@
 
 <b>Solution:</b> The first example would be of a robot trying to walk from one end to the other end of a room without falling. A state here would be the position of the robot and the view of the room the robot sees then. Actions would include making steps in any direction the robot sees as useful to achieve the goal of reaching the other end. Rewards could be -1 for each step it takes and -10 or a large negative for its collapse. 
 
-​    For the second example, consider an agent playing a game of chess. Each game position could be considered a state. Actions would be the valid moves the agent could play in the current state. Rewards would be awarded only after the game finishes i.e. a positive reward for a win and a negative reward for a loss. The rewards for the intermediate state transitions could be assigned to zero.
+   For the second example, consider an agent playing a game of chess. Each game position could be considered a state. Actions would be the valid moves the agent could play in the current state. Rewards would be awarded only after the game finishes i.e. a positive reward for a win and a negative reward for a loss. The rewards for the intermediate state transitions could be assigned to zero.
 
-​    Lastly, a stock investment task could fit into the reinforcement learning framework, wherein the state would be the current stocks held and the total balance left with the agent. It could also include a list of all the stocks along with their prices that are available in the market. Actions would comprise of buy and sell transactions. Rewards would be negative for each unit of money spent and positive for each unit of money earned. 
+   Lastly, a stock investment task could fit into the reinforcement learning framework, wherein the state would be the current stocks held and the total balance left with the agent. It could also include a list of all the stocks along with their prices that are available in the market. Actions would comprise of buy and sell transactions. Rewards would be negative for each unit of money spent and positive for each unit of money earned. 
 
 <b><i>Exercise 3.2</i></b> Is the reinforcement learning framework adequate to usefully represent all goal-directed learning tasks? Can you think of any clear exceptions?
 
@@ -90,7 +90,7 @@ Give the equation corresponding to this intuition and diagram for the action val
 
 ![image-ex3_12](images/ex3_17.PNG)
 
-Assuming &gamma;�= 0.9, the above sum would be equal to 24.419.
+Assuming &gamma; = 0.9, the above sum would be equal to 24.419.
 
 <b>Exercise 3.18 - Exercise 3.21:</b>
 
